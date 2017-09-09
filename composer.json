@@ -9,6 +9,7 @@
     ],
     "require": {
         "php": ">=7.0.0",
+        "barryvdh/laravel-ide-helper": "^2.4",
         "crhg/irkit-client": "master@dev",
         "fideloper/proxy": "~3.3",
         "laktak/hjson": "^2.0",
