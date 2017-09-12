@@ -1,0 +1,35 @@
+swagger: "2.0"
+info:
+  description: "IRKit Wrapper"
+  version: "1.0.0"
+  title: "IRKit Wrapper"
+host: "localhost:8000"
+basePath: "/api"
+tags:
+- name: "irkit"
+schemes:
+- "http"
+paths:
+  /command/{accessory}/{command}:
+    get:
+      tags:
+      - "irkit"
+      summary: "issue a command to accessory"
+      description: ""
+      operationId: "command"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "path"
+        name: "accessory"
+        description: "accessory name"
+        required: true
+        type: string
+      - in: "path"
+        name: "command"
+        description: "command name"
+        required: true
+        type: string
+      responses:
+        200:
+          description: "OK"

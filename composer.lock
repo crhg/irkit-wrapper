@@ -4,8 +4,71 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c28ba552ed90c398c92ec383392e58a2",
+    "content-hash": "56aba644a12bc3ae7498523d5c10439e",
     "packages": [
+        {
+            "name": "barryvdh/laravel-cors",
+            "version": "v0.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-cors.git",
+                "reference": "2551489de60486471434b0c7050f7fc65f9c9119"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/2551489de60486471434b0c7050f7fc65f9c9119",
+                "reference": "2551489de60486471434b0c7050f7fc65f9c9119",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.3.x|5.4.x|5.5.x",
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "~3.1",
+                "symfony/http-kernel": "~3.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.x",
+                "phpunit/phpunit": "^4.8|^5.2",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Cors\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Cors\\": "src/"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "time": "2017-08-28T11:42:05+00:00"
+        },
         {
             "name": "barryvdh/laravel-ide-helper",
             "version": "v2.4.1",
@@ -134,18 +197,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crhg/irkit-client.git",
-                "reference": "746531dcbbfd9578bcbec49d0a8db5d12a75a6fa"
+                "reference": "ec6c8d1441dc73b23cdd180549a3d5641987275d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/746531dcbbfd9578bcbec49d0a8db5d12a75a6fa",
-                "reference": "746531dcbbfd9578bcbec49d0a8db5d12a75a6fa",
+                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/ec6c8d1441dc73b23cdd180549a3d5641987275d",
+                "reference": "ec6c8d1441dc73b23cdd180549a3d5641987275d",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "6.3.0"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Crhg\\IRKit\\": "src/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -160,7 +228,7 @@
                 "source": "https://github.com/crhg/irkit-client/tree/master",
                 "issues": "https://github.com/crhg/irkit-client/issues"
             },
-            "time": "2017-09-09T07:29:41+00:00"
+            "time": "2017-09-10T04:29:25+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1293,6 +1361,35 @@
                 "php"
             ],
             "time": "2017-09-02T17:10:46+00:00"
+        },
+        {
+            "name": "nunun/laravel-openapi",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nunun/laravel-openapi.git",
+                "reference": "093fe89a33b56bac940161a4dab3c4f6c57ba226"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nunun/laravel-openapi/zipball/093fe89a33b56bac940161a4dab3c4f6c57ba226",
+                "reference": "093fe89a33b56bac940161a4dab3c4f6c57ba226",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LaravelOpenAPI\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2017-08-06T07:36:52+00:00"
         },
         {
             "name": "paragonie/random_compat",

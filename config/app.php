@@ -167,7 +167,9 @@ return [
         /*
          * Package Service Providers...
          */
+        Barryvdh\Cors\ServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        LaravelOpenAPI\LaravelOpenAPIProvider::class,
 
         /*
          * Application Service Providers...
