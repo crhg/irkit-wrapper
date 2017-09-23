@@ -46,7 +46,7 @@ class IrkitApi extends IrkitApiBase
         $config['logger'] = Log::getMonolog();
 
         /** @var Client $irkit_client */
-        $irkit_client = App::makeWith(Client::class, ['config' => $config]);
+        $irkit_client = App::makeWith(Client::class, ['config_array' => $config]);
 
         $irkit_client->send($accessory, $command);
         return response('OK');
