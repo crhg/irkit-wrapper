@@ -197,16 +197,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crhg/irkit-client.git",
-                "reference": "5377830f0e40dbd777893c7f9c6f3fcd5bccd6b2"
+                "reference": "305413f7faeb00ccf56535daf4c36ca39f30ace1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/5377830f0e40dbd777893c7f9c6f3fcd5bccd6b2",
-                "reference": "5377830f0e40dbd777893c7f9c6f3fcd5bccd6b2",
+                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/305413f7faeb00ccf56535daf4c36ca39f30ace1",
+                "reference": "305413f7faeb00ccf56535daf4c36ca39f30ace1",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/guzzle": "6.3.0"
+                "guzzlehttp/guzzle": "6.3.0",
+                "psr/log": "^1.0"
             },
             "type": "library",
             "autoload": {
@@ -228,7 +229,7 @@
                 "source": "https://github.com/crhg/irkit-client/tree/master",
                 "issues": "https://github.com/crhg/irkit-client/issues"
             },
-            "time": "2017-09-12T12:01:08+00:00"
+            "time": "2017-09-23T00:31:32+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -860,16 +861,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.3",
+            "version": "v5.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "779a98d3b2ebed2128db1a668dcc10a65c9b01be"
+                "reference": "74f5831447817034838b3539c644303036df3d8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/779a98d3b2ebed2128db1a668dcc10a65c9b01be",
-                "reference": "779a98d3b2ebed2128db1a668dcc10a65c9b01be",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/74f5831447817034838b3539c644303036df3d8e",
+                "reference": "74f5831447817034838b3539c644303036df3d8e",
                 "shasum": ""
             },
             "require": {
@@ -988,7 +989,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-09-07T13:50:21+00:00"
+            "time": "2017-09-22T13:33:35+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1708,16 +1709,16 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "3.7.0",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e"
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
-                "reference": "0ef23d1b10cf1bc576e9d865a7e9c47982c5715e",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/45cffe822057a09e05f7bd09ec5fb88eeecd2334",
+                "reference": "45cffe822057a09e05f7bd09ec5fb88eeecd2334",
                 "shasum": ""
             },
             "require": {
@@ -1786,7 +1787,7 @@
                 "identifier",
                 "uuid"
             ],
-            "time": "2017-08-04T13:39:04+00:00"
+            "time": "2017-09-22T20:46:04+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

@@ -18,6 +18,7 @@ use App;
 use App\RESTfulAPI\Codegen\Controllers\IrkitApiBase;
 use Crhg\IRKit\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class IrkitApi extends IrkitApiBase
 {
@@ -42,9 +43,11 @@ class IrkitApi extends IrkitApiBase
     protected function command(Request $request, $accessory, $command)
     {
         $config = config('irkit_client');
+        $config['logger'] = Log::getMonolog();
+
         /** @var Client $irkit_client */
-        // $irkit_client = App::makeWith(Client::class, ['config' => $config]);
-        $irkit_client = new Client($config);
+        $irkit_client = App::makeWith(Client::class, ['config' => $config]);
+
         $irkit_client->send($accessory, $command);
         return response('OK');
     }
