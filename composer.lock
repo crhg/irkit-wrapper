@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crhg/irkit-client.git",
-                "reference": "305413f7faeb00ccf56535daf4c36ca39f30ace1"
+                "reference": "1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/305413f7faeb00ccf56535daf4c36ca39f30ace1",
-                "reference": "305413f7faeb00ccf56535daf4c36ca39f30ace1",
+                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8",
+                "reference": "1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8",
                 "shasum": ""
             },
             "require": {
@@ -229,7 +229,7 @@
                 "source": "https://github.com/crhg/irkit-client/tree/master",
                 "issues": "https://github.com/crhg/irkit-client/issues"
             },
-            "time": "2017-09-23T00:31:32+00:00"
+            "time": "2017-09-23T02:07:20+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
