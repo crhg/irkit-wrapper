@@ -16,9 +16,7 @@ namespace App\RESTfulAPI\Controllers;
 
 use App;
 use App\RESTfulAPI\Codegen\Controllers\IrkitApiBase;
-use Crhg\IRKit\Client;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
+use Crhg\LaravelIRKit\Facades\IRKit;
 
 class IrkitApi extends IrkitApiBase
 {
@@ -34,21 +32,14 @@ class IrkitApi extends IrkitApiBase
      *
      * issue a command to accessory.
      *
-     * @param Request $request http request
      * @param string $accessory accessory name (required)
      * @param string $command command name (required)
      *
      * @return \Illuminate\Http\Response
      */
-    protected function command(Request $request, $accessory, $command)
+    protected function command($accessory, $command)
     {
-        $config = config('irkit_client');
-        $config['logger'] = Log::getMonolog();
-
-        /** @var Client $irkit_client */
-        $irkit_client = App::makeWith(Client::class, ['config_array' => $config]);
-
-        $irkit_client->send($accessory, $command);
+        IRKit::send($accessory, $command);
         return response('OK');
     }
 

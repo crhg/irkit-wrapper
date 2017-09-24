@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "56aba644a12bc3ae7498523d5c10439e",
+    "content-hash": "3632d8cae3f4a98dc88dbd7dd97dddc0",
     "packages": [
         {
             "name": "barryvdh/laravel-cors",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/crhg/irkit-client.git",
-                "reference": "1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8"
+                "reference": "be7e17acffef89ea545b361f16b9838a5f534ba6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8",
-                "reference": "1913566faf5a0fb26d1c6dc787a971a4f0a5f8a8",
+                "url": "https://api.github.com/repos/crhg/irkit-client/zipball/be7e17acffef89ea545b361f16b9838a5f534ba6",
+                "reference": "be7e17acffef89ea545b361f16b9838a5f534ba6",
                 "shasum": ""
             },
             "require": {
@@ -229,7 +229,58 @@
                 "source": "https://github.com/crhg/irkit-client/tree/master",
                 "issues": "https://github.com/crhg/irkit-client/issues"
             },
-            "time": "2017-09-23T02:07:20+00:00"
+            "time": "2017-09-23T14:28:24+00:00"
+        },
+        {
+            "name": "crhg/laravel-irkit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/crhg/laravel-irkit.git",
+                "reference": "a2efafe7023e53ee7ab662ee35673cf8f2d80326"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/crhg/laravel-irkit/zipball/a2efafe7023e53ee7ab662ee35673cf8f2d80326",
+                "reference": "a2efafe7023e53ee7ab662ee35673cf8f2d80326",
+                "shasum": ""
+            },
+            "require": {
+                "crhg/irkit-client": "master@dev",
+                "illuminate/console": "^5.5",
+                "illuminate/http": "^5.5",
+                "illuminate/support": "^5.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Crhg\\LaravelIRKit\\Providers\\IRKitServiceProvider"
+                    ],
+                    "aliases": {
+                        "IRKit": "Crhg\\LaravelIRKit\\Facade\\IRKit"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Crhg\\LaravelIRKit\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Manabu Matsui",
+                    "email": "manabu.matsui@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/crhg/laravel-irkit/tree/master",
+                "issues": "https://github.com/crhg/laravel-irkit/issues"
+            },
+            "time": "2017-09-23T15:43:11+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -4420,7 +4471,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "crhg/irkit-client": 20
+        "crhg/irkit-client": 20,
+        "crhg/laravel-irkit": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

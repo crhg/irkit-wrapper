@@ -5,13 +5,15 @@
     "license": "MIT",
     "type": "project",
     "repositories": [
-        { "type": "vcs", "url": "https://github.com/crhg/irkit-client" }
+        { "type": "vcs", "url": "https://github.com/crhg/irkit-client" },
+        { "type": "vcs", "url": "https://github.com/crhg/laravel-irkit" }
     ],
     "require": {
         "php": ">=7.0.0",
         "barryvdh/laravel-cors": "^0.9.3",
         "barryvdh/laravel-ide-helper": "^2.4",
         "crhg/irkit-client": "master@dev",
+        "crhg/laravel-irkit": "master@dev",
         "fideloper/proxy": "~3.3",
         "laktak/hjson": "^2.0",
         "laravel/framework": "5.5.*",

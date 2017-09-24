@@ -180,6 +180,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * IRKit Service Provider
+         */
+        \Crhg\LaravelIRKit\Providers\IRKitServiceProvider::class,
+
     ],
 
     /*
@@ -229,6 +234,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'IRKit' => \Crhg\LaravelIRKit\Facades\IRKit::class,
     ],
 
 ];
