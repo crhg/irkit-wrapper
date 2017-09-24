@@ -17,6 +17,7 @@ namespace App\RESTfulAPI\Controllers;
 use App;
 use App\RESTfulAPI\Codegen\Controllers\IrkitApiBase;
 use Crhg\LaravelIRKit\Facades\IRKit;
+use Illuminate\Http\Request;
 
 class IrkitApi extends IrkitApiBase
 {
@@ -32,12 +33,13 @@ class IrkitApi extends IrkitApiBase
      *
      * issue a command to accessory.
      *
+     * @param string Request $request
      * @param string $accessory accessory name (required)
      * @param string $command command name (required)
      *
      * @return \Illuminate\Http\Response
      */
-    protected function command($accessory, $command)
+    protected function command(Request $request, $accessory, $command)
     {
         IRKit::send($accessory, $command);
         return response('OK');
