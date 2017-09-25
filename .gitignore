@@ -12,3 +12,4 @@ yarn-error.log
 _ide_helper.php
 .env
 .phpstorm.meta.php
+composer.lock
